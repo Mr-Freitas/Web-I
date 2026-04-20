@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #1a1625;
+    color: #e8e0f5;
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1a1625;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3d3460;
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+  .status-badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold tracking-wide;
+  }
+
+  .status-lendo {
+    @apply bg-red-500/20 text-red-400 border border-red-500/30;
+  }
+
+  .status-lido {
+    @apply bg-emerald-500/20 text-emerald-400 border border-emerald-500/30;
+  }
+
+  .status-quero-ler {
+    @apply bg-blue-500/20 text-blue-400 border border-blue-500/30;
+  }
+
+  .btn-primary {
+    @apply flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium
+           bg-accent-purple/20 text-accent-purple-light border border-accent-purple/30
+           hover:bg-accent-purple/30 hover:border-accent-purple/50
+           transition-all duration-200 cursor-pointer;
+  }
+
+  .btn-danger {
+    @apply flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium
+           bg-red-500/10 text-red-400 border border-red-500/20
+           hover:bg-red-500/20 hover:border-red-500/40
+           transition-all duration-200 cursor-pointer;
+  }
+
+  .sidebar-item {
+    @apply flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium
+           text-purple-300/70 hover:text-purple-200 hover:bg-white/5
+           transition-all duration-200 cursor-pointer;
+  }
+
+  .sidebar-item-active {
+    @apply bg-accent-purple/20 text-purple-100 border border-accent-purple/30;
+  }
+
+  .book-card {
+    @apply bg-bg-card rounded-2xl p-4 flex items-start gap-4
+           border border-white/5 hover:border-accent-purple/30
+           transition-all duration-300 hover:bg-bg-hover
+           hover:shadow-lg hover:shadow-accent-purple/10
+           animate-fade-in;
+  }
+}

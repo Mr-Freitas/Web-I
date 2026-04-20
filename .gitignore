@@ -1,0 +1,10 @@
+#Dependências 
+
+node_modules/
+dist/
+build/ 
+# Tailwind 
+
+dist/
+dist-ssr/
+*.local
