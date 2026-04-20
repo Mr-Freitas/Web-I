@@ -1,5 +1,5 @@
 import { Trash2 } from 'lucide-react';
-
+{/*Caixa para delete seguro */}
 export default function ConfirmDialog({ onConfirm, onCancel }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
