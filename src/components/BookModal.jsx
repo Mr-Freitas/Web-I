@@ -47,7 +47,7 @@ export default function BookModal({ book, onSave, onClose }) {
           </button>
         </div>
 
-        {/* Form */}
+        {/* Formulario */}
         <form onSubmit={handleSubmit} className="px-6 py-5 space-y-4">
           <Field label="Título *">
             <input
@@ -104,7 +104,7 @@ export default function BookModal({ book, onSave, onClose }) {
             />
           </Field>
 
-          {/* Actions */}
+          {/* Ações */}
           <div className="flex justify-end gap-3 pt-2">
             <button
               type="button"
