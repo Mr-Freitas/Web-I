@@ -25,7 +25,7 @@ export default function Sidebar({ onAddBook }) {
         </button>
       </nav>
 
-      {/* Add button */}
+      {/* Adicionar Botão */}
       <div className="px-3 pb-5">
         <button
           onClick={onAddBook}
