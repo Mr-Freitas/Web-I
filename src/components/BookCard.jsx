@@ -23,7 +23,7 @@ export default function BookCard({ book, onEdit, onDelete }) {
         )}
       </div>
 
-      {/* Info */}
+      {/* Informações */}
       <div className="flex-1 min-w-0">
         <h3 className="font-display font-semibold text-sm text-purple-100 leading-tight line-clamp-2 mb-1">
           {book.title}
